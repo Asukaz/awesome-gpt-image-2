@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const skillName = 'gpt-image-2-style-library';
 const source = join(root, 'agents', 'skills', skillName);
+const highScoreBrandSource = join(root, 'src', 'assets', 'highscore-beacon-logo-pack');
 const targetDefinitions = {
   codex: {
     label: 'Codex',
@@ -34,6 +35,10 @@ if (!existsSync(join(source, 'SKILL.md'))) {
   throw new Error(`Skill source is missing: ${source}`);
 }
 
+if (!existsSync(highScoreBrandSource)) {
+  throw new Error(`HighScore brand asset source is missing: ${highScoreBrandSource}`);
+}
+
 function selectedTargets() {
   const names = rawTargets.length ? rawTargets : ['all'];
   const selected = new Set();
@@ -50,9 +55,15 @@ function selectedTargets() {
 
 for (const targetDefinition of selectedTargets()) {
   const target = join(targetDefinition.root, skillName);
+  const targetBrandAssets = join(target, 'assets', 'highscore-beacon-logo-pack');
+
   mkdirSync(targetDefinition.root, { recursive: true });
   rmSync(target, { recursive: true, force: true });
   cpSync(source, target, { recursive: true });
 
+  mkdirSync(join(target, 'assets'), { recursive: true });
+  cpSync(highScoreBrandSource, targetBrandAssets, { recursive: true });
+
   console.log(`Installed ${skillName} for ${targetDefinition.label}: ${target}`);
+  console.log(`Installed HighScore brand assets: ${targetBrandAssets}`);
 }
