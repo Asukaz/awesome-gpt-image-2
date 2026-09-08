@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#000000"/>
+    <stop offset="52%" stop-color="#000000"/>
+    <stop offset="100%" stop-color="#000000"/>
+  </linearGradient>
+</defs>
+<!-- Beacon H mark -->
+<g transform="translate(35,28) scale(0.47)">
+  <path d="M112 116 C112 92 132 72 156 72 H204 V207 H308 V72 H356 C380 72 400 92 400 116 V396 C400 420 380 440 356 440 H308 V305 H204 V440 H156 C132 440 112 420 112 396 Z" fill="url(#g)"/>
+  <path d="M256 192
+           C264 224 288 248 320 256
+           C288 264 264 288 256 320
+           C248 288 224 264 192 256
+           C224 248 248 224 256 192Z" fill="#FFFFFF"/>
+</g>
+
+<!-- Wordmark -->
+<text x="300" y="186" font-family="Arial, Helvetica, sans-serif" font-size="106" font-weight="700" letter-spacing="-4" fill="#000000">HighScore</text>
+</svg>
