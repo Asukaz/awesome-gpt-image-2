@@ -8,6 +8,7 @@ Apply this brand signature to every generated infographic, diagram, educational 
 - Website text: `highscore.ai`
 - Descriptor: `Free AI Certificate Courses Directory`
 - X handle: `@HighScore_AI`
+- Text-only X signature: `𝕏 @HighScore_AI`
 - Canonical public logo source: `https://www.highscore.ai/brand/highscore-mark.svg`
 
 ## Repository assets
@@ -35,9 +36,18 @@ Every branded output must reserve a small publication-signature area at the bott
 1. the official HighScore logo or mark;
 2. `highscore.ai`;
 3. `Free AI Certificate Courses Directory` when space permits;
-4. `@HighScore_AI`.
+4. the X account rendered as `𝕏 @HighScore_AI`.
 
 The website and X handle must be spelled exactly. Do not invent alternate domains, handles, slogans, or logo shapes.
+
+## X / social signature
+
+- Preferred text treatment: `𝕏 @HighScore_AI`.
+- `𝕏` is a typographic Unicode fallback used to visually identify the X account when no official X logo asset is supplied.
+- Keep the `𝕏` symbol and handle on one line when space permits.
+- Keep the social signature smaller than the HighScore logo and website.
+- Do not use the legacy Twitter bird icon or the word `Twitter`.
+- Do not invent an X logo asset. If an official X brand asset is supplied in the future, prefer that asset over the typographic fallback.
 
 ## Placement and sizing
 
@@ -65,7 +75,7 @@ If repository assets cannot be attached directly:
 
 1. retrieve the official asset from the repository or canonical public logo URL when tooling permits;
 2. use it as a reference input when possible;
-3. if no visual asset can be supplied reliably, render the exact textual signature (`highscore.ai`, `Free AI Certificate Courses Directory`, `@HighScore_AI`) and do not fabricate an approximate HighScore logo.
+3. if no visual asset can be supplied reliably, render the exact textual signature (`highscore.ai`, `Free AI Certificate Courses Directory`, `𝕏 @HighScore_AI`) and do not fabricate an approximate HighScore logo.
 
 ## Prompt block
 
@@ -73,7 +83,7 @@ Include a dedicated block equivalent to the following in the final image prompt:
 
 ```text
 HIGHSCORE.AI BRAND SIGNATURE
-Reserve a clean publication signature in the bottom-right corner, about 3% from the right and bottom edges and no more than roughly 18% of image width. Use the supplied official HighScore logo asset with correct proportions and the appropriate light/dark variant. Include the exact text “highscore.ai” and “@HighScore_AI”; include “Free AI Certificate Courses Directory” when space permits. Keep the signature understated, crisp, readable, and visually secondary. Do not invent, redraw, distort, crop, rotate, recolor, or stylize the logo. Do not overlap primary content.
+Reserve a clean publication signature in the bottom-right corner, about 3% from the right and bottom edges and no more than roughly 18% of image width. Use the supplied official HighScore logo asset with correct proportions and the appropriate light/dark variant. Include the exact text “highscore.ai” and, when space permits, “Free AI Certificate Courses Directory”. Render the X account exactly as “𝕏 @HighScore_AI”, keeping it visually secondary to the HighScore logo and website. Do not use the legacy Twitter bird. Keep the signature understated, crisp, readable, and visually secondary. Do not invent, redraw, distort, crop, rotate, recolor, or stylize the HighScore logo. Do not overlap primary content.
 ```
 
 ## Priority
